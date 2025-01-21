@@ -5,3 +5,6 @@
 
 import random
 import string
+
+random_letter = random.choice(string.ascii_letters)
+print(f"Random Letter:{random_letter}")
