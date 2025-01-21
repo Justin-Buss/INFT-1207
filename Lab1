@@ -1,0 +1,7 @@
+#Names: Justin Buss, Alexander Papachristu
+#Date: January 21, 2025
+#Date Last Modifed: January 21, 2025
+#Discription: A random password generator that use a user inputed values to generate a password.
+
+import random
+import string
