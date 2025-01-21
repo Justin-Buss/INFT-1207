@@ -9,6 +9,9 @@ import random
 import string
 from string import punctuation
 
+def random_letters(num):
+    return num
+
 random_letter = random.choice(string.ascii_letters)
 print(f"Random Letter: {random_letter}")
 
@@ -17,3 +20,4 @@ print(f"Random Number: {random_number}")
 
 random_special = random.choice(string.punctuation)
 print(f"Random Special Character: {random_special}")
+
