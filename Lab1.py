@@ -7,21 +7,34 @@
 
 import random
 import string
+from random import shuffle
 from string import punctuation
 
 def get_user_input(prompt, min_value, max_value):
 
     pass
-def generate_password(length, num_letters, num_digits, num_specials):
-    pass
 
-random_letter = random.choice(string.ascii_letters)
-print(f"Random Letter: {random_letter}")
-
-random_number = random.choice(string.digits)
-print(f"Random Number: {random_number}")
-
-random_special = random.choice(string.punctuation)
-print(f"Random Special Character: {random_special}")
-
-print("This is a commit")
+def generate_password(num_letters, num_digits, num_specials):
+    #letter loop
+    letter_list = []
+    for loop in num_letters:
+        random_letter = random.choice(string.ascii_letters)
+        letter_list.append(random_letter)
+        if loop == num_letters:
+            break
+    #Number Loop
+    number_list = []
+    for loop in num_digits:
+        random_number = random.choice(string.digits)
+        number_list.append(random_number)
+        if loop == num_digits:
+            break
+    #Special Loop
+    special_list = []
+    for loop in num_specials:
+        random_special = random.choice(string.punctuation)
+        special_list.append(random_special)
+        if loop == num_specials:
+            break
+    random_password = letter_list + number_list + special_list
+    return random_password
