@@ -49,8 +49,8 @@ def get_user_input():
     MIN_LENGTH = 8
 
     # Getting input from user
+    length = input(f"Enter the total length of the password between {MIN_LENGTH} and {MAX_LENGTH}: ")
     try:
-        length = input("Enter the total length of the password: ")
         length = int(length)
         if length < MIN_LENGTH:
             print(f"Please enter a value greater than {MIN_LENGTH}")
