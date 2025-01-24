@@ -37,6 +37,7 @@ def generate_password(num_letters, num_digits, num_specials):
     random_password = letter_list + number_list + special_list
     random.shuffle(random_password)
     print(''.join(random_password))
+    print(f'The password contains:\n\t{num_letters} letters\n\t{num_digits} digits\n\t{num_specials} special characters')
 
     return random_password
 
